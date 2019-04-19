@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
+    <h1 class="title">WalkCLE&#8482;</h1>
     <router-view :locations="locations" :isLogged="isLogged" />
     <div id="footer">&copy; 2019 Lex Matt Chris Tom -- All Rights Reserved</div>
   </div>

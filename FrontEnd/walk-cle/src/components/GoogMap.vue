@@ -20,7 +20,6 @@
        
       <gmap-info-window @click="showInfo" :position="infoWindow" :opened="windowOpen" @closeclick="closeWindow()"> 
           <div id="info"><div id="infoBoxName">{{this.infoName}}</div></div><router-link class="btn" id="router" :to="{ name: 'CheckInView' }"> &#10003;Check In</router-link>
-          <modal/>
          </gmap-info-window>
     </gmap-map>
     
@@ -196,7 +195,6 @@ export default {
 #infoBoxName{
   font-weight: bold;
   font-size: 150%;
-  background:white;
   color: brown;
   border-radius: 50%;
 }

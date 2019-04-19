@@ -1,10 +1,9 @@
 <template>
   <div id="home">
-    <h1 class="title">WalkCLE&#8482;</h1>
     <goog-map v-bind:isLogged="isLogged" id="map"/>
-    <about id="about"/>
+    <about v-if="isLogged" class="info"/>
     <div v-if="!isLogged" id="hide">
-    <div id="info" v-on:click="isLogged">
+    <div class="info" v-on:click="isLogged">
       <h1>WalkCLE&#8482;</h1>
       <p>Welcome to Cleveland, Ohio! Whether you are an avid sports fan, love great entertainment, or even 
         better food then you've come to the right place! Not sure where to start? No problem, We've 
@@ -75,7 +74,7 @@ export default {
   align-items: flex-start;
 }
 
-#info h1{
+.info h1{
   color: white;
   text-align: center;
   margin-left: auto;
@@ -87,7 +86,7 @@ export default {
 		2px 2px 0 #000;
 }
 
-#info p{
+.info p{
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -101,7 +100,7 @@ export default {
   line-height: 1.2;
 }
 
-#info {
+.info {
   background-color: #001244;
   border: 1px solid black;
   opacity: .85;
@@ -109,6 +108,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
+  border-radius: 10px;
 }
 
 #about-login{

@@ -1,6 +1,6 @@
 <template>
     <div id="about">
-    <div id="box"> 
+    <div>
          <!--   
         <Modal
   btnText=" click for more info"
@@ -56,13 +56,7 @@ export default {
 
 <style>
 #box{
-    background: rgba(255, 255, 255, 0.6);
-    color:black;
-    padding: 0px;
-    border-radius: 0px;
-    box-shadow: 0 0 20px white;
-    text-align: center;
-
+    color: white;
 }
 
 

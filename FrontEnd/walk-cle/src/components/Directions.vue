@@ -2,6 +2,7 @@
  
   <template>
   <div id="directions">
+    <h1 id="title">Directions</h1>
     <div id="floating-panel">
       <b>Start:</b>
       <select id="start">
@@ -180,9 +181,12 @@ body {
   margin: 0;
   padding: 0;
 }
+#title{
+  color: white;
+}
 #floating-panel {
   position: absolute;
-  top: 250px;
+  top: 400px;
   left: 2%;
   z-index: 5;
   background-color: #fff;
@@ -202,6 +206,10 @@ body {
 }
 b{
   padding-left: 10px;
+}
+
+#directions{
+  margin-top: 3%;
 }
 </style>
   
